@@ -1,0 +1,67 @@
+#header_menu {
+    a {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                padding: 60px 0;
+                border-bottom: 4px solid $invisible;
+                margin: 0 15px;
+                transition: border-bottom .3s;
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $link_color;
+                    transition: color .3s;
+
+                    i {
+                        color: $menu_bg;
+                    }
+
+                    &:hover {
+                        color: $menu_bg;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    border-bottom: 4px solid $menu_bg;
+                }
+            }
+        }
+
+        form {
+            border-bottom: 2px solid $menu_bg;
+
+            input {
+                border: unset;
+                text-align: right;
+                font-weight: 500;
+                color: $link_color;
+
+                &::placeholder {
+                    font-weight: 500;
+                    color: $link_color;
+                }
+            }
+
+            button {
+                border: unset;
+                margin-left: 10px;
+                background-color: unset;
+                cursor: pointer;
+                transition: opacity .3s;
+
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

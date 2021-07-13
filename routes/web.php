@@ -45,8 +45,72 @@ Route::get('/comics', function () {
         ]
     ];
 
+    $header_menu = [
+        [
+            "text" => "Characters",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Comics",
+            "url" => "/",
+            "active" => true,
+            "scroll" => false
+        ],
+        [
+            "text" => "Movies",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "TV",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Games",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Collectibles",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Videos",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Fans",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "News",
+            "url" => "/",
+            "active" => false,
+            "scroll" => false
+        ],
+        [
+            "text" => "Shop",
+            "url" => "/",
+            "active" => false,
+            "scroll" => true
+        ]
+    ];
+
     return view('comics', [
         "cards" => $cards,
-        "blue_menu_links" => $blue_menu_links
+        "blue_menu_links" => $blue_menu_links,
+        "header_menu" => $header_menu
     ]);
 });

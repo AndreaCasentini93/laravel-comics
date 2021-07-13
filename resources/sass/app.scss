@@ -1,11 +1,20 @@
-//
+// Fontsource
 @import '~@fontsource/montserrat/index.css';
 @import '~@fontsource/montserrat/500.css';
 @import '~@fontsource/montserrat/700.css';
+
+// Fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
+
+// General
 @import 'partials/common';
 @import 'partials/variables';
+
+// Partials
+@import 'partials/header-menu';
 @import 'partials/blue-header';
 @import 'partials/jumbotron';
 @import 'partials/cards';

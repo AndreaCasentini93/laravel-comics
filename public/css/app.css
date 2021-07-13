@@ -11900,6 +11900,7 @@ body {
 }
 
 ul {
+  margin: 0;
   list-style: none;
 }
 
@@ -11909,6 +11910,76 @@ a {
 
 a:hover {
   color: unset;
+}
+
+#header_menu a img {
+  max-width: 150px;
+}
+
+#header_menu nav ul li {
+  padding: 60px 0;
+  border-bottom: 4px solid #00000000;
+  margin: 0 15px;
+  transition: border-bottom 0.3s;
+}
+
+#header_menu nav ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #464749;
+  transition: color 0.3s;
+}
+
+#header_menu nav ul li a i {
+  color: #0282F9;
+}
+
+#header_menu nav ul li a:hover {
+  color: #0282F9;
+}
+
+#header_menu nav ul li:hover,
+#header_menu nav ul li.active {
+  border-bottom: 4px solid #0282F9;
+}
+
+#header_menu nav form {
+  border-bottom: 2px solid #0282F9;
+}
+
+#header_menu nav form input {
+  border: unset;
+  text-align: right;
+  font-weight: 500;
+  color: #464749;
+}
+
+#header_menu nav form input::-moz-placeholder {
+  font-weight: 500;
+  color: #464749;
+}
+
+#header_menu nav form input:-ms-input-placeholder {
+  font-weight: 500;
+  color: #464749;
+}
+
+#header_menu nav form input::placeholder {
+  font-weight: 500;
+  color: #464749;
+}
+
+#header_menu nav form button {
+  border: unset;
+  margin-left: 10px;
+  background-color: unset;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#header_menu nav form button:hover {
+  opacity: 0.5;
 }
 
 #blue_header {
