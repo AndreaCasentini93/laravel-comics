@@ -6,7 +6,7 @@
         {{-- STYLE CSS --}}
         <link rel="stylesheet" href="{{ asset("css/app.css") }}">
         {{-- TITLE --}}
-        <title>Laravel</title>
+        <title>@yield('title')</title>
     </head>
     
     <body>
