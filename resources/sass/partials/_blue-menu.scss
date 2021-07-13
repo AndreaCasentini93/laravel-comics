@@ -1,0 +1,23 @@
+#blue_menu {
+    padding: 30px 0;
+    background-color: $blue_menu_bg;
+
+    .blue_menu_link {
+        width: calc(100% / 5 - 30px);
+        margin: 15px;
+
+        img {
+            display: block;
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 5px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            color: $white;
+        }
+    }
+}
