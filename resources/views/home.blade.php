@@ -1,7 +1,9 @@
 @extends('layouts.main')
 
 @section('main-content')
-<section>
-    Main
-</section>
+
+    <section>
+        @include('partials.cards')
+    </section>
+
 @endsection
