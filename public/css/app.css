@@ -12098,8 +12098,62 @@ a:hover {
   color: #FFFFFF;
 }
 
-footer {
-  color: blue;
+#footer_menu {
+  position: relative;
+  padding: 50px 0;
+  font-size: 14px;
+  background-image: url("/img/footer-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#footer_menu [class*=col] {
+  margin-right: 50px;
+}
+
+#footer_menu [class*=col] h2,
+#footer_menu [class*=col] .h2 {
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+#footer_menu [class*=col] ul {
+  padding: 0;
+  margin: 0;
+}
+
+#footer_menu [class*=col] ul li {
+  margin: 2px 0;
+}
+
+#footer_menu [class*=col] ul li a {
+  color: #808080;
+}
+
+#footer_menu p {
+  width: 45%;
+  margin-top: 20px;
+  color: #808080;
+}
+
+#footer_menu p a {
+  color: #0282F9;
+  transition: opacity 0.3s;
+}
+
+#footer_menu p a:hover {
+  opacity: 0.6;
+}
+
+#footer_menu .logo {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  transform: translateY(-15%);
 }
 
 #socials {
