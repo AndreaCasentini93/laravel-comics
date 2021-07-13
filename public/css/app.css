@@ -11885,13 +11885,37 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: unset;
+}
+
 #dc_cards {
+  padding: 40px 0;
   background-color: #1C1C1C;
 }
 
 #dc_cards .dc_card {
   width: calc(100% / 6 - 30px);
   margin: 15px;
+  transition: transform 0.3s;
 }
 
 #dc_cards .dc_card img {
@@ -11903,8 +11927,12 @@ fieldset:disabled .btn {
 #dc_cards .dc_card h2,
 #dc_cards .dc_card .h2 {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #FFFFFF;
+}
+
+#dc_cards .dc_card:hover {
+  transform: scale(1.08);
 }
 
