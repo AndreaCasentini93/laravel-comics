@@ -1,3 +1,3 @@
 <footer>
-    Footer
+    @include('partials.socials')
 </footer>
