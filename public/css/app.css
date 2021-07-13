@@ -12132,10 +12132,14 @@ a:hover {
 
 #footer_menu [class*=col] ul li a {
   color: #808080;
+  transition: color 0.3s;
+}
+
+#footer_menu [class*=col] ul li a:hover {
+  color: #0282F9;
 }
 
 #footer_menu p {
-  width: 45%;
   margin-top: 20px;
   color: #808080;
 }

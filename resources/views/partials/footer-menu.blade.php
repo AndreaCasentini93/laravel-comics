@@ -2,96 +2,41 @@
     <div class="container">
         <div class="d-flex">
             <div class="col_left">
-                <h2>Titolo</h2>
+                <h2>DC Comics</h2>
                 <ul>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
+                    @foreach ($dc_comics_links as $link)
+                        <li>
+                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
                 </ul>
-                <h2>Titolo</h2>
+                <h2>Shop</h2>
                 <ul>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
+                    @foreach ($shop_links as $link)
+                        <li>
+                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col_center">
-                <h2>Titolo</h2>
+                <h2>DC</h2>
                 <ul>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
+                    @foreach ($dc_links as $link)
+                        <li>
+                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col_right">
-                <h2>Titolo</h2>
+                <h2>Sities</h2>
                 <ul>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
-                    <li>
-                        <a href="/">Link</a>
-                    </li>
+                    @foreach ($cities_links as $link)
+                        <li>
+                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

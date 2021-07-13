@@ -27,13 +27,17 @@
 
                 a {
                     color: $link_color2;
+                    transition: color .3s;
+
+                    &:hover {
+                        color: $menu_bg;
+                    }
                 }
             }
         }
     }
 
     p {
-        width: 45%;
         margin-top: 20px;
         color: $link_color2;
 
