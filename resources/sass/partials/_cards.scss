@@ -24,4 +24,19 @@
             transform: scale(1.08);
         }
     }
+
+    .cards_button {
+        padding: 10px 30px;
+        border: 1px solid $bt_color;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        color: $white;
+        background-color: $bt_color;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: unset;
+        }
+    }
 }

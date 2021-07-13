@@ -16,7 +16,7 @@
 
         {{-- MAIN --}}
         <main>
-            @yield('main-content', 'Main')
+            @yield('main-content')
         </main>
         {{-- MAIN --}}
 
