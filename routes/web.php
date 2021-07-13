@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
 
     $cards = config('comics');
 
@@ -45,7 +45,7 @@ Route::get('/', function () {
         ]
     ];
 
-    return view('home', [
+    return view('comics', [
         "cards" => $cards,
         "blue_menu_links" => $blue_menu_links
     ]);
