@@ -4,39 +4,31 @@
             <div class="col_left">
                 <h2>DC Comics</h2>
                 <ul>
-                    @foreach ($dc_comics_links as $link)
-                        <li>
-                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
-                        </li>
-                    @endforeach
+                    @include('partials.footer-link', [
+                        "array" => $dc_comics_links
+                    ])
                 </ul>
                 <h2>Shop</h2>
                 <ul>
-                    @foreach ($shop_links as $link)
-                        <li>
-                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
-                        </li>
-                    @endforeach
+                    @include('partials.footer-link', [
+                        "array" => $shop_links
+                    ])
                 </ul>
             </div>
             <div class="col_center">
                 <h2>DC</h2>
                 <ul>
-                    @foreach ($dc_links as $link)
-                        <li>
-                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
-                        </li>
-                    @endforeach
+                    @include('partials.footer-link', [
+                        "array" => $dc_links
+                    ])
                 </ul>
             </div>
             <div class="col_right">
                 <h2>Sities</h2>
                 <ul>
-                    @foreach ($cities_links as $link)
-                        <li>
-                            <a href="{{ $link['url'] }}">{{ $link['text'] }}</a>
-                        </li>
-                    @endforeach
+                    @include('partials.footer-link', [
+                        "array" => $cities_links
+                    ])
                 </ul>
             </div>
         </div>

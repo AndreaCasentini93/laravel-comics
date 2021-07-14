@@ -15,10 +15,11 @@
 
                 a {
                     text-transform: uppercase;
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 600;
                     color: $link_color;
                     transition: color .3s;
+                    white-space: nowrap;
 
                     i {
                         color: $menu_bg;
@@ -40,6 +41,7 @@
             border-bottom: 2px solid $menu_bg;
 
             input {
+                max-width: 150px;
                 border: unset;
                 text-align: right;
                 font-weight: 500;
